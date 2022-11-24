@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+  width: 130px;
+}
+.sign-btn{
+  display: inline;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: red;
+  border-radius:5px ;
+  padding: 0.4rem 1.0rem;
+  color: white;
+}
+.navbar{
+
+  padding:  2.0rem 4.0rem !important ;
+}
+
+header{
+    background-image: url(/image/background.png);
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 0;
+
+}
+
+.top-shelf{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    
+  }
+.top-text{
+    align-items: center;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+.first-text{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.top-text h4 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 50rem;
+}
+.small-text{
+  font-size: 16px;
+  margin-top: 1.0rem;
+  font-weight: 700;
+}
+
+.searchbox{
+    display: flex;
+    position: relative;
+    height: 50px !important;
+
+}
+.searchbox input{
+  font-size: 16px;
+}
+.searchbox label{
+  letter-spacing: 2px;
+  position: absolute;
+  top: 20px !important;
+  color: black;
+  font-size: 16px;
+  pointer-events:none ;
+  transition: translate(-4rem,-6rem) 0.6s ease;
+}
+
+.searchbox input:focus~label, .searchbox input:valid~label{
+  bottom: -11px;
+  color: #fff;
+  font-size: 12px;
+} 
+
+
+
+
+
+.type-text{
+    border: none;
+    width: 500px;
+   
+}
+.btn-flex{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+hr{
+    height: 0.4rem!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    background-color: gray;
+    margin-left:auto ;
+    margin-right:auto ;
+    width:auto ;
+}
+
+.box{
+    background-color: black;
+}
+
+.pageR{
+  margin-left:auto ;
+    margin-right:auto ;
+  padding: 0!important;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.box-text-1{
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 70rem;
+    padding: 3.0rem;
+    margin: auto 0;
+    padding-right: 0!important;
+    margin-right: 0!important;
+}
+
+.box-text-2{
+  align-items: center;
+  text-align: center;
+  color: white;
+  max-width: 70rem;
+  padding: 3.0rem;
+  margin: auto 0;
+  padding-right: 0!important;
+  margin-left: 0!important;
+}
+    
+
+
+  .box-text-1 h1,.box-text-2 h1 {
+    align-items: center;
+    color: white;
+    max-width: 40rem;
+    padding: 0.5rem 2.0rem;
+    margin: 0;
+    
+  }
+  .dtext{
+    max-width: 40rem;
+    font-size: 18px;
+    max-width: 29rem;
+    padding: 1.0rem 2rem;
+    margin: 0;
+  }
+  
+  .pageR img{
+    padding: 6.0rem;
+    width: 90%;
+    
+}
+
+  .bar-parent{
+    align-items: center;
+    text-align: center;
+    padding: 2.0rem;
+  }
+  .inquiry-text{
+    padding: 1.0rem 1.0rem;
+    color: white;
+    font-size: 50px;
+  }
+  .bar{
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    margin: 30px auto!important ; 
+    width: 50%;
+    height: 4.0rem;
+    padding: 1.5rem 0.5rem;
+
+  }
+  
+  .bar p{
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer{
+    padding: 2.0rem;
+    color: #757575;
+  }
+ 
+  .foot{
+    display: flex;
+  }
+  
+  .footz p{
+    margin: auto;
+    min-width: 100px;
+    box-sizing: border-box;
+    margin: 0 0 16px 0 !important;
+
+  }
+
+  .footer-text{
+    margin: 2.0rem 0;
+  }
+
+  .footer a{
+    color: #757575;
+  }
+  
+  /* for medium screen */
+
+
+  @media only screen and (max-width: 768px) {
+    .logo{
+      width: 95px;
+    }
+    .sign-btn{
+      display: inline;
+      border: none;
+      font-size: 12px;
+      font-weight: 600;
+      background-color: red;
+      border-radius:5px ;
+      padding: 0.3rem 0.9rem;
+      color: white;
+    }
+    .navbar{
+
+      padding:  1.0rem 2.0rem !important ;
+    }
+    header{
+      
+      height: 80vh;
+    }
+    .top-shelf{
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25%;
+        
+      }
+    .top-text{
+        align-items: center;
+        color: white;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+        
+      }
+      .top-text br{
+        display: none;
+      }
+    .first-text{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        max-width: 25rem;
+    }
+    .top-text h4 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      max-width: 50rem;
+    }
+    .small-text{
+      text-align: center;
+      font-size: 15px;
+      max-width: 18rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+   
+    .searchbox{
+        display: block;
+        height: 50px !important;
+        position: relative;
+    
+    }
+    .searchbox input{
+      width: 22rem;
+     margin: auto;
+     margin-bottom: 2%;
+     height:30px;
+    }
+    .btn-flex{
+      background-color: red;
+      display: flex;
+      height: 60%;
+      margin: auto;
+
+      color: white;
+      border: none;
+      font-size: 13px;
+      padding: 0.5rem ;
+  }
+    .sub-btn-flex{
+      background-color: red;
+      height: 0.9rem;
+      color: white;
+      border: none;
+      padding: 0.2rem 0.4rem;
+  }
+      .searchbox label{
+        letter-spacing: 2px;
+        position: absolute;
+        top: 2px !important;
+        left: 0;
+        color: black;
+        font-size: 13px;
+        pointer-events:none ;
+        transition: translate(-7rem,-6rem) 0.6s ease;
+      }
+      
+      .searchbox input:focus~label, .searchbox input:valid~label{
+        bottom: -11px;
+        color: #fff;
+        font-size: 12px;
+      } 
+      .btn-flex{
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 5px;
+      }
+      .pageR{
+        margin-left:auto ;
+        margin-right:auto ;
+        padding: 0!important;
+        display: block;
+        justify-content: center;
+      
+      }
+      
+      .box-text-1{
+          align-items: center;
+          text-align: center;
+          color: white;
+          max-width: 70rem;
+          padding: 3.0rem;
+          margin: auto 0;
+          padding-right: 0!important;
+          margin-right: 0!important;
+      }
+      
+      .box-text-2{
+        align-items: center;
+        color: white;
+        max-width: 70rem;
+        padding: 3.0rem;
+        padding-right: 0!important;
+        margin-left: 0!important;
+      }
+          
+      
+      
+      .box-text-1 h1,.box-text-2 h1 {
+        align-items: center;
+        color: white;
+        font-size: 28px;
+        padding: 0.4rem 1.0rem;
+        margin: auto !important;
+        
+      }
+        .dtext{
+          max-width: 40rem;
+          font-size: 18px;
+          padding: 0.3rem 2rem;
+          margin: 0;
+        }
+        
+        .pageR img{
+          padding: 0rem;
+          width: 100%;
+          margin: auto;
+          
+      }
+    
+      .bar-parent{
+        align-items: center;
+        text-align: center;
+        padding: 2.0rem;
+      }
+      .inquiry-text{
+        padding: 0.4rem 0.5rem;
+        color: white;
+        font-size: 30px;
+      }
+      .bar{
+        background-color: #303030;
+        color: white;
+        display: flex;
+        justify-content: space-between; 
+        margin: 30px auto!important ; 
+        width: 70%;
+        height: 2.0rem;
+        padding: 1.5rem 0.5rem;
+    
+      }
+     
+      .bar p{
+        text-align: center;
+        margin: 0;
+      }
+      .footer-info{
+        display: block !important;
+      }
+  }
+  
+/* for small screen */
+  
+
+    @media only screen and (max-width: 520px) {
+
+      .logo{
+        width: 95px;
+      }
+      .sign-btn{
+        display: inline;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: red;
+        border-radius:5px ;
+        padding: 0.3rem 0.9rem;
+        color: white;
+      }
+      .navbar{
+
+        padding:  1.0rem 2.0rem !important ;
+      }
+      header{
+        
+        height: 80vh;
+      }
+      .top-shelf{
+          align-items: center;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          margin-top: 25%;
+          
+        }
+      .top-text{
+          align-items: center;
+          color: white;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          max-width: 40rem;
+          
+        }
+        .top-text br{
+          display: none;
+        }
+      .first-text{
+          text-align: center;
+          font-size: 28px;
+          font-weight: 500;
+          max-width: 25rem;
+      }
+      .top-text h4 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        max-width: 50rem;
+      }
+      .small-text{
+        text-align: center;
+        font-size: 15px;
+        max-width: 18rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+     
+      .searchbox{
+          display: block;
+          height: 50px !important;
+          position: relative;
+      
+      }
+      .searchbox input{
+        width: 22rem;
+       margin: auto;
+       margin-bottom: 2%;
+      }
+      .btn-flex{
+        background-color: red;
+        display: flex;
+        margin: auto;
+
+        color: white;
+        border: none;
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+    .sub-btn-flex{
+      background-color: red;
+      height: 1.2rem;
+      color: white;
+      border: none;
+      padding: 0.2rem;
+  }
+      .searchbox label{
+        letter-spacing: 2px;
+        position: absolute;
+        top: 2px !important;
+        left: 0;
+        color: black;
+        font-size: 13px;
+        pointer-events:none ;
+        transition: translate(-7rem,-6rem) 0.6s ease;
+      }
+      
+      .searchbox input:focus~label, .searchbox input:valid~label{
+        bottom: -11px;
+        color: #fff;
+        font-size: 12px;
+      } 
+      .btn-flex{
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 5px;
+      }
+      .pageR{
+        margin-left:auto ;
+        margin-right:auto ;
+        padding: 0!important;
+        display: block;
+        justify-content: center;
+       
+      }
+      
+      .box-text-1{
+          align-items: center;
+          text-align: center;
+          color: white;
+          max-width: 70rem;
+          padding: 3.0rem;
+          margin: auto 0;
+          padding-right: 0!important;
+          margin-right: 0!important;
+      }
+      
+      .box-text-2{
+        align-items: center;
+        color: white;
+        max-width: 70rem;
+        padding: 3.0rem;
+        padding-right: 0!important;
+        margin-left: 0!important;
+      }
+          
+      
+      
+      .box-text-1 h1,.box-text-2 h1 {
+        align-items: center;
+        color: white;
+        font-size: 28px;
+        padding: 0.4rem 1.0rem;
+        margin: auto !important;
+        
+      }
+        .dtext{
+          max-width: 40rem;
+          font-size: 18px;
+          padding: 0.3rem 2rem;
+          margin: 0;
+        }
+        
+        .pageR img{
+          padding: 1.0rem;
+          width: 100%;
+          margin: auto;
+          
+      }
+      
+        .bar-parent{
+          align-items: center;
+          text-align: center;
+          padding: 2.0rem;
+        }
+        .inquiry-text{
+          padding: 0.4rem 0.5rem;
+          color: white;
+          font-size: 30px;
+        }
+        .bar{
+          background-color: #303030;
+          color: white;
+          display: flex;
+          justify-content: space-between; 
+          margin: 30px auto!important ; 
+          width: 70%;
+          height: 2.0rem;
+          padding: 1.5rem 0.5rem;
+      
+        }
+
+        .bar p{
+          text-align: center;
+          margin: 0;
+        }
+        .footer-info{
+          display: block !important;
+        }
+      
+     }
+/* for really small screen */
+
+@media only screen and (max-width: 320px) and (min-width: 10px) {
+
+      .logo{
+        width: 75px;
+      }
+      .sign-btn{
+        display: inline;
+        border: none;
+        font-size: 11px;
+        font-weight: 600;
+        background-color: red;
+        border-radius:5px ;
+        padding: 0.2rem 0.9rem;
+        color: white;
+      }
+      .navbar{
+
+        padding:  1.0rem 2.0rem !important ;
+      }
+      header{
+        
+        height: 80vh;
+      }
+      .top-shelf{
+          align-items: center;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          margin-top: 25%;
+          
+        }
+      .top-text{
+          align-items: center;
+          color: white;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          max-width: 40rem;
+          
+        }
+        .top-text br{
+          display: none;
+        }
+      .first-text{
+          text-align: center;
+          font-size: 28px;
+          font-weight: 500;
+          max-width: 25rem;
+      }
+      .top-text h4 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        max-width: 50rem;
+      }
+      .small-text{
+        text-align: center;
+        font-size: 15px;
+        max-width: 18rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+    
+      .searchbox{
+          display: block;
+          height: 50px !important;
+          position: relative;
+      
+      }
+      .searchbox input{
+        width: 15rem;
+       margin: auto;
+       margin-bottom: 2%;
+      }
+      .btn-flex{
+        background-color: red;
+        display: flex;
+        margin: auto;
+
+        color: white;
+        border: none;
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+    .sub-btn-flex{
+      background-color: red;
+      height: 1.2rem;
+      color: white;
+      border: none;
+      padding: 0.2rem;
+  }
+      .searchbox label{
+        letter-spacing: 2px;
+        position: absolute;
+        top: 2px !important;
+        left: 0;
+        color: black;
+        font-size: 13px;
+        pointer-events:none ;
+        transition: translate(-7rem,-6rem) 0.6s ease;
+      }
+      
+      .searchbox input:focus~label, .searchbox input:valid~label{
+        bottom: -11px;
+        color: #fff;
+        font-size: 12px;
+      } 
+      .btn-flex{
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 5px;
+      }
+      .pageR{
+        margin-left:auto ;
+        margin-right:auto ;
+        padding: 0!important;
+        display: block;
+        justify-content: center;
+       
+      }
+      
+      .box-text-1{
+          align-items: center;
+          text-align: center;
+          color: white;
+          max-width: 70rem;
+          padding: 3.0rem;
+          margin: auto 0;
+          padding-right: 0!important;
+          padding-left: 0!important;
+          margin-right: 0!important;
+      }
+      
+      .box-text-2{
+        align-items: center;
+        color: white;
+        max-width: 70rem;
+        padding: 3.0rem;
+        padding-right: 0!important;
+        padding-left: 0!important;
+        margin-left: 0!important;
+      }
+          
+      
+      
+      .box-text-1 h1,.box-text-2 h1 {
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        padding: 0.4rem 1.0rem;
+        margin: auto !important;
+        
+      }
+        .dtext{
+          max-width: 40rem;
+          font-size: 11px;
+          padding: 0.3rem 2rem;
+          margin: 0;
+        }
+        
+        .pageR img{
+          padding: 1.0rem;
+          width: 100%;
+          margin: auto;
+          
+      }
+      
+        .bar-parent{
+          align-items: center;
+          text-align: center;
+          padding: 2.0rem;
+        }
+        .inquiry-text{
+          padding: 0.1rem 0.2rem;
+          color: white;
+          font-size: 25px;
+        }
+        .bar{
+          background-color: #303030;
+          color: white;
+          display: flex;
+          justify-content: space-between; 
+          margin: 30px auto!important ; 
+          width: 90%;
+          height: 2.0rem;
+          padding: 1.5rem 0.5rem;
+      
+        }
+       
+        .bar p{
+          text-align: center;
+          margin: 0;
+          font-size: 13px;
+        }
+        .footer-info{
+          display: block !important;
+        }
+      .footer p{
+        font-size: 13px;
+      }
+      .footer-text{
+        margin: 2.0rem 0;
+        /* font-size: 18px; */
+      }
+    
+      .footer a{
+        font-size: 13px;
+      }
+      .footer-text a{
+        font-size: 18px;
+        
+      }
+     
+    }
