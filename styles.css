@@ -1,8 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
-
+body{
+  background-color: black;
+}
 .logo{
   width: 130px;
 }
@@ -72,20 +75,24 @@ header{
 }
 .searchbox input{
   font-size: 16px;
+  outline: none;
+  padding: 6px 14px 3px 14px;
+  max-width: 500px !important;
 }
 .searchbox label{
   letter-spacing: 2px;
   position: absolute;
-  top: 20px !important;
   color: black;
   font-size: 16px;
+  padding: 0.8rem;
   pointer-events:none ;
-  transition: translate(-4rem,-6rem) 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .searchbox input:focus~label, .searchbox input:valid~label{
-  bottom: -11px;
-  color: #fff;
+  /* bottom: -8px; */
+  top: -12px;
+  color: red;
   font-size: 12px;
 } 
 
@@ -102,7 +109,16 @@ header{
     background-color: red;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-btn-flex{
+  background-color: red;
+  height: 1.2rem;
+  color: white;
+  border: none;
+  padding: 0.2rem;
 }
 
 hr{
@@ -202,8 +218,16 @@ hr{
   }
 
   .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2.0rem;
     color: #757575;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .footer-info{
+    margin: auto;
   }
  
   .foot{
@@ -302,11 +326,31 @@ hr{
       width: 22rem;
      margin: auto;
      margin-bottom: 2%;
-     height:30px;
+     /* height:30px; */
+     /* font-size: 11px; */
+     outline: none;
+     padding: 15px 9px 4px 11px;
     }
+    .searchbox label{
+      letter-spacing: 2px;
+      position: absolute;
+      top: -6px !important;
+      left: 0;
+      color: black;
+      font-size: 16px;
+      /* padding: 0.6rem; */
+      pointer-events:none ;
+      transition:  0.6s ease;
+    }
+    .searchbox input:focus~label, .searchbox input:valid~label{
+      top: -22px;
+      color: red;
+      font-size: 9px;
+    } 
     .btn-flex{
       background-color: red;
       display: flex;
+      align-items: center;
       height: 60%;
       margin: auto;
 
@@ -322,28 +366,8 @@ hr{
       border: none;
       padding: 0.2rem 0.4rem;
   }
-      .searchbox label{
-        letter-spacing: 2px;
-        position: absolute;
-        top: 2px !important;
-        left: 0;
-        color: black;
-        font-size: 13px;
-        pointer-events:none ;
-        transition: translate(-7rem,-6rem) 0.6s ease;
-      }
       
-      .searchbox input:focus~label, .searchbox input:valid~label{
-        bottom: -11px;
-        color: #fff;
-        font-size: 12px;
-      } 
-      .btn-flex{
-          background-color: red;
-          color: white;
-          border: none;
-          padding: 5px;
-      }
+     
       .pageR{
         margin-left:auto ;
         margin-right:auto ;
@@ -424,7 +448,8 @@ hr{
         margin: 0;
       }
       .footer-info{
-        display: block !important;
+        display: flex !important;
+        flex-direction: row;
       }
   }
   
@@ -509,6 +534,8 @@ hr{
       .btn-flex{
         background-color: red;
         display: flex;
+        align-items: center;
+
         margin: auto;
 
         color: white;
@@ -539,12 +566,7 @@ hr{
         color: #fff;
         font-size: 12px;
       } 
-      .btn-flex{
-          background-color: red;
-          color: white;
-          border: none;
-          padding: 5px;
-      }
+    
       .pageR{
         margin-left:auto ;
         margin-right:auto ;
@@ -625,7 +647,8 @@ hr{
           margin: 0;
         }
         .footer-info{
-          display: block !important;
+          display: flex !important;
+          flex-direction: row;
         }
       
      }
@@ -709,6 +732,8 @@ hr{
       .btn-flex{
         background-color: red;
         display: flex;
+        align-items: center;
+
         margin: auto;
 
         color: white;
@@ -739,12 +764,7 @@ hr{
         color: #fff;
         font-size: 12px;
       } 
-      .btn-flex{
-          background-color: red;
-          color: white;
-          border: none;
-          padding: 5px;
-      }
+     
       .pageR{
         margin-left:auto ;
         margin-right:auto ;
@@ -828,7 +848,8 @@ hr{
           font-size: 13px;
         }
         .footer-info{
-          display: block !important;
+          display: flex !important;
+          flex-direction: row;
         }
       .footer p{
         font-size: 13px;
