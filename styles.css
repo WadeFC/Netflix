@@ -19,6 +19,14 @@ body{
   padding: 0.4rem 1.0rem;
   color: white;
 }
+.sign-btn a {
+  text-decoration: none;
+  color: white;
+}
+.sign-btn a:hover {
+  text-decoration: none;
+  color: white;
+}
 .navbar{
   padding:  2.0rem 4.0rem !important ;
 }
@@ -254,6 +262,13 @@ hr{
 
   /* -----Sign in page start */
 
+  .sign-navbar{
+    padding:  1.0rem 4.0rem !important ;
+  }
+  .sign-logo{
+    width: 150px;
+  }
+
 .headerz{
   background-image: url(/image/background.png);
     background-position: center;
@@ -264,34 +279,48 @@ hr{
 }
 
 .bubble{
-  width: 360px;
-  /* height: auto; */
+  width: 28.125rem;
+  height:41.2rem;
   background: rgba(0,0,0,0.65);
   margin: auto;
   color: white;
-  /* padding: 2.5rem; */
+  padding: 2.5rem;
   margin-bottom: 5%;
+  display: block;
+}
+.whole{
+    display: block;
+    justify-content: center;
+    padding: 3px;
 }
 .first{
-  padding: 1.0rem 2.0rem;
-  /* max-width: 420px; */
+  padding:  0.40rem;
+  max-width: 42rem;
+  margin-bottom: 20%;
 
 }
+.first-header-text{
+  font-size: 32px !important;
+    margin: 0.5rem 0;
+    padding: 0.7rem 0.4rem;
+}
 .reach{
-  width: 100%;
-  height: 2.0rem;
-  margin: 0.3rem;  
+  width: 22rem;
+  height: 3.1rem;
+  margin: 0.5rem;
+  margin-left:0 ;  
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 0.9rem 1.0rem 0rem 1.0rem;
-  background: #8c8c8c;
-  font-size: 13px;
+  background: #333333;
+  font-size: 14px;
 }
 .first-btn{
-  width: 100%;
-  height: 2.0rem;
-  margin: 0.3rem;  
+  width: 22rem;
+  height: 3.1rem;
+  margin: 1.5rem 0.6rem;
+  margin-left:0 ;  
   outline: none;
   border: none;
   border-radius: 5px;
@@ -330,7 +359,8 @@ margin-bottom: 0 !;
 }
 
 .second{
-  padding: 1.0rem 2.0rem;
+  padding: 1.0rem 0;
+  text-align: left;
 
 }
 .li-text{
@@ -341,7 +371,7 @@ margin-bottom: 0 !;
   font-size: 11px;
 }
 #red{
-  height: 2.0rem;
+  /* height: 2.0rem; */
   background-color: red;
   color: white;
   /* width: 90%; */
@@ -353,21 +383,23 @@ margin-bottom: 0 !;
 .reach-beta-sub-01{
   position: absolute;
   font-size: 11px;
+  top: -1;
   left: 0;
   letter-spacing: 0.5px;
   color: white;
   pointer-events:none ;
-  padding:  1.3rem 1.0rem 1.0rem 1.0rem;
+  /* padding:  1.3rem 1.0rem 1.0rem 1.0rem; */
   transition: 0.6s ease;
 }
 .reach-beta-sub-02{
   position: absolute;
   font-size: 11px;
+  top: -1;
   left: 0;
   letter-spacing: 0.5px;
   color: white;
   pointer-events:none ;
-  padding:  1.3rem 1.0rem 1.0rem 1.0rem;
+  /* padding:  1.3rem 1.0rem 1.0rem 1.0rem; */
   transition: 0.6s ease;
 }
 
@@ -404,7 +436,7 @@ margin-bottom: 0 !;
   /* min-width: 100px; */
   box-sizing: border-box;
   margin: 0 0 16px 0 !important;
-
+  flex-direction: ;
 }
 
 .sign-footer-text{
@@ -413,6 +445,14 @@ margin-bottom: 0 !;
 
 .sign-footer a{
   color: #757575;
+}
+
+details > p {
+  height:10px;
+  width:40px;
+  display:flex;
+  flex-direction:column-reverse;
+  
 }
 
 
@@ -565,6 +605,7 @@ margin-bottom: 0 !;
       
       .box-text-2{
         align-items: center;
+        text-align: center;
         color: white;
         max-width: 70rem;
         padding: 3.0rem;
@@ -579,7 +620,7 @@ margin-bottom: 0 !;
         color: white;
         font-size: 28px;
         padding: 0.4rem 1.0rem;
-        margin: auto !important;
+        /* margin: auto !important; */
         
       }
         .dtext{
@@ -600,6 +641,8 @@ margin-bottom: 0 !;
         align-items: center;
         text-align: center;
         padding: 2.0rem;
+        padding-bottom: 5.0rem;
+
       }
       .inquiry-text{
         padding: 0.4rem 0.5rem;
@@ -764,6 +807,7 @@ margin-bottom: 0 !;
       
       .box-text-2{
         align-items: center;
+        text-align: center;
         color: white;
         max-width: 70rem;
         padding: 3.0rem;
@@ -799,6 +843,8 @@ margin-bottom: 0 !;
           align-items: center;
           text-align: center;
           padding: 2.0rem;
+          padding-bottom: 5.0rem;
+
         }
         .inquiry-text{
           padding: 0.4rem 0.5rem;
@@ -963,12 +1009,12 @@ margin-bottom: 0 !;
       
       .box-text-2{
         align-items: center;
+        text-align: center;
         color: white;
         max-width: 70rem;
         padding: 3.0rem;
-        padding-right: 0!important;
-        padding-left: 0!important;
-        margin-left: 0!important;
+        /* padding-right: 0!important; */
+        /* margin-left: 0!important; */
       }
           
       
@@ -999,6 +1045,7 @@ margin-bottom: 0 !;
           align-items: center;
           text-align: center;
           padding: 2.0rem;
+          padding-bottom: 5.0rem;
         }
         .inquiry-text{
           padding: 0.1rem 0.2rem;
