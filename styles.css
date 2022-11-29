@@ -213,18 +213,51 @@ hr{
     display: flex;
     justify-content: space-between; 
     margin: 30px auto!important ; 
+    margin-bottom: 0 !important;
     width: 50%;
     height: 4.0rem;
     padding: 1.5rem 0.5rem;
+    transition: 0.4s;
+    cursor: pointer;
 
   }
   
   .bar p{
     text-align: center;
     margin: 0;
+    font-size:18px;
+    padding: 0;
     align-self: center;
   }
+  .panel{
+    background-color: #303030;
+    display:none ;
+    /* padding: 2.0rem; */
+    width: 50%;
+    margin: auto;
+    /* max-height: 3.0rem; */
+    max-height: auto;
+    overflow: hidden;
+    color: white;
+    border-top: 2px solid white;
+    transition: max-height 0.2s ease-out;
+    
+  }
+  .answer p{
+    color: white;
+    /* display: inline-block; */
+    font-size: 15px;
+    /* letter-spacing: 2px; */
 
+  }
+  .faq.active .answer{
+    max-height: 2.0rem;
+    max-width: 60%;
+    color: white;
+  }
+  .faq.active .fa-duotone{
+    transform: rotate(180deg);
+  }
   .footer{
     display: flex;
     flex-direction: column;
